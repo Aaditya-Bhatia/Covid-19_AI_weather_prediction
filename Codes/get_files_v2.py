@@ -18,7 +18,12 @@ import pandas as pd
 from wwo_hist import retrieve_hist_data
 import os
 
-dirName = '/Users/aadityabhatia/Projects/Coronavirus/'
+
+pandemic = pd.read_csv(dirName+'/corona_data/HealthSecurityIndex.csv')
+
+
+
+dirName = '/Users/aadityabhatia/Documents/GitHub/Covid-19_AI_weather_prediction/'
 
 # getting the coronavirus data
 os.chdir(dirName+'corona_data')
